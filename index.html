@@ -29,41 +29,40 @@
         <h3>Formulário de Agendamento</h3>
         <form action="#" method="post">
 
-            <label for="nome">Condomínio:</label>
-            <input type="text" id="nome" name="nome" required>
+            <label for="condominio">Condomínio:</label>
+            <input type="text" id="condominio" name="condominio" required>
 
-            <label for="nome">Nome do Organizador:</label>
-            <input type="text" id="nome" name="nome" required>
+            <label for="nomeOrganizador">Nome do Organizador:</label>
+            <input type="text" id="nomeOrganizador" name="nomeOrganizador" required>
             
             <label for="data">Data:</label>
             <input type="date" id="data" name="data" required>
             
-            <label for="hora">Primeira Chamada:</label>
-            <input type="time" id="hora" name="hora" required>
+            <label for="primeiraChamada">Primeira Chamada:</label>
+            <input type="time" id="primeiraChamada" name="primeiraChamada" required>
 
-            <label for="hora">Segunda Chamada:</label>
-            <input type="time" id="hora" name="hora" required>
+            <label for="segundaChamada">Segunda Chamada:</label>
+            <input type="time" id="segundaChamada" name="segundaChamada" required>
             
-            <!--Aqui abaixo será as escolhas das virtuais-->
-            <label for="local">Virtual:</label>
-            <select id="local" name="local" required>
-            <option value="" disabled selected>Selecione uma sala virtual</option>
-            <option value="Virtual 1">Virtual 1</option>
-            <option value="Virtual 2">Virtual 2</option>
-            <option value="Virtual 3">Virtual 3</option>
-            <option value="Virtual 4">Virtual 4</option>
+            <!-- Aqui abaixo será a escolha das salas virtuais -->
+            <label for="virtual">Virtual:</label>
+            <select id="virtual" name="virtual" required>
+                <option value="" disabled selected>Selecione uma sala virtual</option>
+                <option value="Virtual 1">Virtual 1</option>
+                <option value="Virtual 2">Virtual 2</option>
+                <option value="Virtual 3">Virtual 3</option>
+                <option value="Virtual 4">Virtual 4</option>
             </select>
 
-            
             <label for="arquivo">Formulário:</label>
             <input type="file" id="arquivo" name="arquivo" accept=".pdf,.doc,.docx." required>
 
-            
-            <button type="submit">Agendar</button>
+            <button type="button" onclick="capturarDados()">Agendar</button> 
         </form>
     </section>
 
-    <link rel="stylesheet" href="./src/scripts/main.js">
+    <script src="./src/scripts/main.js"></script> 
+    
     <!-- Rodapé -->
     <footer>
         <p>&copy; 2024 Agendamento de Assembleias. Todos os direitos reservados.</p>
